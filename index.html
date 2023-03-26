@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wave function collapse</title>
+
+    <style>
+        body {
+            background-color: #333;
+        }
+        
+        #editor_canvas {
+            border: 1px solid black;
+        }
+        
+        #editor_buttons {
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            column-gap: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas width="640" height="640" id="canvas"></canvas>
+        <canvas width="640" height="640" id="editor_canvas"></canvas>
+        <div id="editor_buttons"></div>
+    </div>
+    <button id="next">Step</button>
+    <button id="infer">Infer</button>
+    <button id="regenerate">Regenerate</button>
+    <script type="module" src="dist/index.js"></script>
+</body>
+</html>
